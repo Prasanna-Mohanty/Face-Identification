@@ -1,0 +1,82 @@
+person identification microsoft cognitive services step by step
+
+
+
+https://clemenssiebler.com/face-recognition-with-azure-cognitive-services-face-api/
+
+
+https://medium.com/@rachit.bedi1/microsoft-face-apis-using-python-e16775622e3b
+
+https://gist.github.com/rachitbshephertz/683c3f0c8f7c1f7437b5e1128796ee22
+
+
+https://westus.dev.cognitive.microsoft.com/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395244
+
+sample code face video -  https://www.analyticsvidhya.com/blog/2018/12/introduction-face-detection-video-deep-learning-python/
+https://thecodacus.com/opencv-python-face-detection/#.XKVpXpgzZPZ
+face detection model using webcam by python
+Python GUI - https://github.com/Microsoft/Cognitive-Face-Python
+=========================
+opencv python face api
+https://www.analyticsvidhya.com/blog/2018/12/introduction-face-detection-video-deep-learning-python/
+===============
+for DLIB
+https://anaconda.org/conda-forge/dlib
+https://www.codesofinterest.com/2016/10/installing-dlib-on-anaconda-python-on.html
+
+
+
+For OpenCV
+====================
+conda install -c https://conda.anaconda.org/menpo opencv3
+
+https://stackoverflow.com/questions/23119413/how-do-i-install-python-opencv-through-conda
+
+
+>>> import sys
+>>> sys.path
+['', 'C:\\Users\\Prasanna Mohanty\\Anaconda3\\envs\\opencv-env\\python36.zip', 'C:\\Users\\Prasanna Mohanty\\Anaconda3\\envs\\opencv-env\\DLLs', 'C:\\Users\\Prasanna Mohanty\\Anaconda3\\envs\\opencv-env\\lib', 'C:\\Users\\Prasanna Mohanty\\Anaconda3\\envs\\opencv-env', 'C:\\Users\\Prasanna Mohanty\\Anaconda3\\envs\\opencv-env\\lib\\site-packages']
+>>> sys.path.append('C:\\Users\\Prasanna Mohanty\\Anaconda3\\envs\\opencv-env\\lib\\site-packages')
+
+
+C:\\Users\\Prasanna Mohanty\\Anaconda3\\lib\\site-packages
+
+
+
+sys.path.append('C:\\Users\\Prasanna Mohanty\\Anaconda3\\lib\\site-packages')
+
+
+activate opencv-env
+python prompt
+import cv2
+
+https://www.learnopencv.com/install-opencv-3-and-dlib-on-windows-python-only/
+cv2.__version__
+
+
+
+Face Recognition
+==========================================
+conda install -c akode face_recognition_models 
+import face_recognition_models
+
+
+============================================
+search on 05042019
+How to execute a basic .py python pgm from anaconda prompt- http://www.cs.utexas.edu/~mitra/bytes/start.html
+OPENCV
+opencv python face detection camera
+https://docs.opencv.org/trunk/df/d6c/tutorial_js_face_detection_camera.html
+http://programagic.ca/blog/using-python-opencv-for-face-detection-from-camera   github-----https://github.com/r15h1/camigo
+https://www.instructables.com/id/Real-time-Face-Recognition-an-End-to-end-Project/
+https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_setup/py_setup_in_windows/py_setup_in_windows.html
+
+Facedetction4 - https://gist.github.com/radames/effc25355c194bd23bbd1d0cbf87d449
+
+
+https://github.com/nazmiasri95/Face-Recognition ---progress
+
+https://towardsdatascience.com/real-time-face-recognition-an-end-to-end-project-b738bb0f7348
+https://www.hackster.io/mjrobot/real-time-face-recognition-an-end-to-end-project-a10826
+
+https://medium.com/@dvelsner/deploying-a-simple-machine-learning-model-in-a-modern-web-application-flask-angular-docker-a657db075280
