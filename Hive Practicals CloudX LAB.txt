@@ -1,0 +1,41 @@
+Hive - MovieLens Assignment
+MovieLens data sets were collected by the GroupLens Research Project at the University of Minnesota.
+
+This data set consists of
+
+100,000 ratings (1-5) from 943 users on 1682 movies.
+Each user has rated at least 20 movies.
+Simple demographic info for the users (age, gender, occupation, zip)
+Movielens dataset is located at /data/ml-100k in HDFS. Read README.md file to understand the dataset.
+
+We will load u.data file in Hive managed table. u.data contains dataset where each row represents userid, movieid, rating and timestamp fields. Fields are terminated by "\t"
+
+Steps-
+
+Copy the data in u_data table. Run below commands. Replace your-username with your CloudxLab username
+
+--- Copy the data from /data directory in HDFS to your home directory in HDFS. Run below command in Linux console
+
+hadoop fs -cp /data/ml-100k/u.data /user/your-username/
+
+Launch hive from console or launch the Hive editor in Hue. Create a managed table u_data in your database in Hive. Run the below commands in. Replace your-username and your-database-name with your CloudxLab username
+
+--- Create database with your CloudxLab username
+
+CREATE DATABASE If NOT EXISTS your-username;
+
+--- Select your database
+
+USE your-database-name;
+
+--- Create table
+
+CREATE TABLE IF NOT EXISTS u_data( userid INT, movieid INT, rating INT, unixtime TIMESTAMP) ROW FORMAT DELIMITED FIELDS TERMINATED BY '\t' STORED AS TEXTFILE;
+
+--- On hive prompt, load the data from your home directory in HDFS. Run below command in Hive query editor in Hue
+
+LOAD DATA INPATH 'hdfs:///user/your-username/u.data' overwrite into table u_data;
+
+Check if data is loaded. Go to warehouse directory at /apps/hive/warehouse in Hue file browser. Select your database name and go inside it. You will see u_data directory. Go inside it and see if data exists.
+
+select * from u_data order by movieid desc limit 10;
